@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.LoginViewController">
+   <children>
+      <TextField id="loginTextField" fx:id="loginTextField" layoutX="235.0" layoutY="150.0" />
+      <Label layoutX="296.0" layoutY="127.0" text="Login" />
+      <Label layoutX="286.0" layoutY="186.0" text="Password" />
+      <Hyperlink id="createAccHyperlink" fx:id="createAccHyperlink" layoutX="498.0" layoutY="363.0" text="Create account" />
+      <Hyperlink id="forgotPasswordHyperlink" fx:id="forgotPasswordHyperlink" layoutX="257.0" layoutY="242.0" text="Forgot password..." />
+      <PasswordField id="passwordField" fx:id="passwordField" layoutX="237.0" layoutY="209.0" />
+      <Button id="buttonLogin" fx:id="buttonLogin" layoutX="258.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="25.0" prefWidth="105.0" text="Login" />
+      <Label fx:id="loginError" alignment="CENTER" layoutX="259.0" layoutY="319.0" text="Login field is empty" textFill="RED" visible="false">
+         <effect>
+            <Blend mode="RED" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
